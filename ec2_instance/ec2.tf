@@ -1,3 +1,10 @@
+terraform {
+    required_provider{
+        aws = {
+            source = "hashicorp/aws"
+        }
+    }
+}
 provider "aws" {
     access_key = "AKIAY6OXM4NMALTE27NW"
     secret_key = "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"
