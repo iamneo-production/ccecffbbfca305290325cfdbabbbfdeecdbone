@@ -6,11 +6,11 @@ terraform {
     }
 }
 provider "aws" {
+    region     = "ap-southeast-1" # Singapore region
     access_key = "AKIAY6OXM4NMALTE27NW"
     secret_key = "5eGUQxiqXM9Zt/MMSBji5A13hUrbGoomy0ZCINIr"
-    region     = "ap-southeast-1" # Singapore region
 }
-resource "aws_instance" "example" {
+resource "aws_instance" "linux" {
     ami          = "ami-"Oe9aeO9818b5c6f7O"
     instance_type = "t2.micro"
 
